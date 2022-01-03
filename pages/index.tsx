@@ -2,8 +2,10 @@
 import type { NextPage } from "next";
 import Head from "next/head";
 import Image from "next/image";
+import Link from "next/link";
 import Footer from "../components/Footer";
 import Navbar from "../components/Navbar";
+import Service from "../components/Service";
 
 const Home: NextPage = () => {
   return (
@@ -13,14 +15,11 @@ const Home: NextPage = () => {
           name="viewport"
           content="width=device-width, initial-scale=1, shrink-to-fit=no"
         />
-        <meta
-          name="description"
-          content="megakit,business,company,agency,multipurpose,modern,bootstrap4"
-        />
+        <meta name="description" content="NOBLE JET DVP AND MGT LTD" />
 
         <meta name="author" content="themefisher.com" />
 
-        <title>Megakit| Html5 Agency template</title>
+        <title>NobleJet - Home</title>
       </Head>
 
       <body>
@@ -34,21 +33,19 @@ const Home: NextPage = () => {
                 <div className="col-lg-9 col-md-10">
                   <div className="block">
                     <span className="d-block mb-3 text-white text-capitalize">
-                      Prepare for new future
+                      Prepare For New Future
                     </span>
                     <h1 className="animated fadeInUp mb-5">
-                      Our work is <br />
-                      presentation of our <br />
-                      capabilities.
+                      NOBLE JET <br />
+                      DVP AND <br />
+                      MGT LIMITED
                     </h1>
-                    <a
-                      href="#"
-                      target="_blank"
-                      className="btn btn-main animated fadeInUp btn-round-full"
-                    >
-                      Get started
-                      <i className="btn-icon fa fa-angle-right ml-2"></i>
-                    </a>
+                    <Link href="/about">
+                      <a className="btn btn-main animated fadeInUp btn-round-full">
+                        Get started
+                        <i className="btn-icon fa fa-angle-right ml-2"></i>
+                      </a>
+                    </Link>
                   </div>
                 </div>
               </div>
@@ -72,20 +69,20 @@ const Home: NextPage = () => {
                 </div>
               </div>
               <div className="row justify-content-center">
-                <div className="col-lg-4 col-md-6 col-12">
+                <div className="col-lg-4 col-md-6">
                   <div className="intro-item mb-5 mb-lg-0">
-                    <i className="ti-desktop color-one"></i>
-                    <h4 className="mt-4 mb-3">Modern & Responsive design</h4>
+                    <i className="ti-medall color-one"></i>
+                    <h4 className="mt-4 mb-3">Awarded Licensed Company</h4>
                     <p>
                       Lorem ipsum dolor sit amet, consectetur adipisicing elit.
                       Odit, ducimus.
                     </p>
                   </div>
                 </div>
-                <div className="col-lg-4 col-md-6">
+                <div className="col-lg-4 col-md-6 col-12">
                   <div className="intro-item mb-5 mb-lg-0">
-                    <i className="ti-medall color-one"></i>
-                    <h4 className="mt-4 mb-3">Awarded licensed company</h4>
+                    <i className="ti-desktop color-one"></i>
+                    <h4 className="mt-4 mb-3"> Reliable Consulting Firm</h4>
                     <p>
                       Lorem ipsum dolor sit amet, consectetur adipisicing elit.
                       Odit, ducimus.
@@ -95,9 +92,7 @@ const Home: NextPage = () => {
                 <div className="col-lg-4 col-md-6">
                   <div className="intro-item">
                     <i className="ti-layers-alt color-one"></i>
-                    <h4 className="mt-4 mb-3">
-                      Build your website Professionally
-                    </h4>
+                    <h4 className="mt-4 mb-3">Awarded Licensed Company</h4>
                     <p>
                       Lorem ipsum dolor sit amet, consectetur adipisicing elit.
                       Odit, ducimus.
@@ -147,7 +142,11 @@ const Home: NextPage = () => {
           <section className="section counter">
             <div className="container">
               <div className="row">
-                <div className="col-lg-3 col-md-6 col-sm-6">
+                <div
+                  className="col-lg-3 col-md-6 col-sm-6"
+                  data-aos="slide-up"
+                  data-aos-duration="2000"
+                >
                   <div className="counter-item text-center mb-5 mb-lg-0">
                     <h3 className="mb-0">
                       <span className="counter-stat font-weight-bold">
@@ -158,7 +157,11 @@ const Home: NextPage = () => {
                     <p className="text-muted">Project Done</p>
                   </div>
                 </div>
-                <div className="col-lg-3 col-md-6 col-sm-6">
+                <div
+                  className="col-lg-3 col-md-6 col-sm-6"
+                  data-aos="slide-up"
+                  data-aos-duration="1000"
+                >
                   <div className="counter-item text-center mb-5 mb-lg-0">
                     <h3 className="mb-0">
                       <span className="counter-stat font-weight-bold">
@@ -169,7 +172,11 @@ const Home: NextPage = () => {
                     <p className="text-muted">User Worldwide</p>
                   </div>
                 </div>
-                <div className="col-lg-3 col-md-6 col-sm-6">
+                <div
+                  className="col-lg-3 col-md-6 col-sm-6"
+                  data-aos="slide-down"
+                  data-aos-duration="1000"
+                >
                   <div className="counter-item text-center mb-5 mb-lg-0">
                     <h3 className="mb-0">
                       <span className="counter-stat font-weight-bold">39</span>
@@ -177,7 +184,11 @@ const Home: NextPage = () => {
                     <p className="text-muted">Availble Country</p>
                   </div>
                 </div>
-                <div className="col-lg-3 col-md-6 col-sm-6">
+                <div
+                  className="col-lg-3 col-md-6 col-sm-6"
+                  data-aos="slide-down"
+                  data-aos-duration="2000"
+                >
                   <div className="counter-item text-center">
                     <h3 className="mb-0">
                       <span className="counter-stat font-weight-bold">14</span>
@@ -189,90 +200,7 @@ const Home: NextPage = () => {
             </div>
           </section>
           {/* <!-- section Counter End  --> */}
-          {/* <!--  Section Services Start --> */}
-          <section className="section service border-top">
-            <div className="container">
-              <div className="row justify-content-center">
-                <div className="col-lg-7 text-center">
-                  <div className="section-title">
-                    <span className="h6 text-color">Our Services</span>
-                    <h2 className="mt-3 content-title ">
-                      We provide a wide range of creative services{" "}
-                    </h2>
-                  </div>
-                </div>
-              </div>
-
-              <div className="row justify-content-center">
-                <div className="col-lg-4 col-md-6 col-sm-6">
-                  <div className="service-item mb-5">
-                    <i className="ti-desktop"></i>
-                    <h4 className="mb-3">Web development.</h4>
-                    <p>
-                      A digital agency isn't here to replace your internal team,
-                      we're here to partner
-                    </p>
-                  </div>
-                </div>
-
-                <div className="col-lg-4 col-md-6 col-sm-6">
-                  <div className="service-item mb-5">
-                    <i className="ti-layers"></i>
-                    <h4 className="mb-3">Interface Design.</h4>
-                    <p>
-                      A digital agency isn't here to replace your internal team,
-                      we're here to partner
-                    </p>
-                  </div>
-                </div>
-
-                <div className="col-lg-4 col-md-6 col-sm-6">
-                  <div className="service-item mb-5">
-                    <i className="ti-bar-chart"></i>
-                    <h4 className="mb-3">Business Consulting.</h4>
-                    <p>
-                      A digital agency isn't here to replace your internal team,
-                      we're here to partner
-                    </p>
-                  </div>
-                </div>
-
-                <div className="col-lg-4 col-md-6 col-sm-6">
-                  <div className="service-item mb-5 mb-lg-0">
-                    <i className="ti-vector"></i>
-                    <h4 className="mb-3">Branding.</h4>
-                    <p>
-                      A digital agency isn't here to replace your internal team,
-                      we're here to partner
-                    </p>
-                  </div>
-                </div>
-
-                <div className="col-lg-4 col-md-6 col-sm-6">
-                  <div className="service-item mb-5 mb-lg-0">
-                    <i className="ti-android"></i>
-                    <h4 className="mb-3">App development.</h4>
-                    <p>
-                      A digital agency isn't here to replace your internal team,
-                      we're here to partner
-                    </p>
-                  </div>
-                </div>
-
-                <div className="col-lg-4 col-md-6 col-sm-6">
-                  <div className="service-item mb-5 mb-lg-0">
-                    <i className="ti-pencil-alt"></i>
-                    <h4 className="mb-3">Content creation.</h4>
-                    <p>
-                      A digital agency isn't here to replace your internal team,
-                      we're here to partner
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </section>
-          {/* <!--  Section Services End --> */}
+          <Service />
           {/* <!-- Section Cta Start -->  */}
           <section className="section cta">
             <div className="container">
@@ -313,7 +241,7 @@ const Home: NextPage = () => {
 
             <div className="container">
               <div className="row testimonial-wrap">
-                <div className="testimonial-item position-relative">
+                <div className="testimonial-item position-relative col-md-6">
                   <i className="ti-quote-left text-color"></i>
 
                   <div className="testimonial-item-content">
@@ -329,39 +257,7 @@ const Home: NextPage = () => {
                     </div>
                   </div>
                 </div>
-                <div className="testimonial-item position-relative">
-                  <i className="ti-quote-left text-color"></i>
-
-                  <div className="testimonial-item-content">
-                    <p className="testimonial-text">
-                      Consectetur adipisicing elit. Quam maiores perspiciatis
-                      temporibus odio reiciendis error alias debitis atque
-                      consequuntur natus iusto recusandae .
-                    </p>
-
-                    <div className="testimonial-author">
-                      <h5 className="mb-0 text-capitalize">Mickel hussy</h5>
-                      <p>Excutive Director,themefisher</p>
-                    </div>
-                  </div>
-                </div>
-                <div className="testimonial-item position-relative">
-                  <i className="ti-quote-left text-color"></i>
-
-                  <div className="testimonial-item-content">
-                    <p className="testimonial-text">
-                      Quam maiores perspiciatis temporibus odio reiciendis error
-                      alias debitis atque consequuntur natus iusto recusandae
-                      numquam corrupti.
-                    </p>
-
-                    <div className="testimonial-author">
-                      <h5 className="mb-0 text-capitalize">James Watson</h5>
-                      <p>Excutive Director,themefisher</p>
-                    </div>
-                  </div>
-                </div>
-                <div className="testimonial-item position-relative">
+                <div className="testimonial-item position-relative col-md-6">
                   <i className="ti-quote-left text-color"></i>
 
                   <div className="testimonial-item-content">
@@ -381,7 +277,7 @@ const Home: NextPage = () => {
             </div>
           </section>
           {/* <!-- Section Testimonial End --> */}
-          <section className="section latest-blog bg-2">
+          <section className="section latest-blog bg-2 d-none">
             <div className="container">
               <div className="row justify-content-center">
                 <div className="col-lg-7 text-center">

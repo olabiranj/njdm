@@ -1,4 +1,8 @@
+import Link from "next/link";
+import { useState } from "react";
+
 const Navbar = () => {
+  const [toggle, setToggle] = useState(false);
   return (
     <>
       {/* <!-- Header Start -->  */}
@@ -6,58 +10,42 @@ const Navbar = () => {
       <header className="navigation">
         <nav className="navbar navbar-expand-lg  py-4" id="navbar">
           <div className="container">
-            <a className="navbar-brand" href="index.html">
-              Mega<span>kit.</span>
-            </a>
+            <Link href="/">
+              <a className="navbar-brand">
+                Noble<span>Jet</span>
+              </a>
+            </Link>
 
             <button
-              className="navbar-toggler collapsed"
-              type="button"
-              data-toggle="collapse"
-              data-target="#navbarsExample09"
-              aria-controls="navbarsExample09"
-              aria-expanded="false"
-              aria-label="Toggle navigation"
+              className={`navbar-toggler  ${!toggle ? "collapsed" : ""}`}
+              onClick={() => setToggle(!toggle)}
             >
               <span className="fa fa-bars"></span>
             </button>
 
             <div
-              className="collapse navbar-collapse text-center"
+              className={`collapse navbar-collapse text-center  ${
+                toggle ? "show" : ""
+              }`}
               id="navbarsExample09"
             >
               <ul className="navbar-nav ml-auto">
                 <li className="nav-item active">
-                  <a className="nav-link" href="index.html">
-                    Home <span className="sr-only">(current)</span>
-                  </a>
+                  <Link href="/">
+                    <a className="nav-link">
+                      Home <span className="sr-only">(current)</span>
+                    </a>
+                  </Link>
                 </li>
-                <li className="nav-item dropdown">
-                  <a className="nav-link dropdown-toggle" href="#">
-                    About
-                  </a>
-                  <ul className="dropdown-menu" aria-labelledby="dropdown03">
-                    <li>
-                      <a className="dropdown-item" href="about.html">
-                        Our company
-                      </a>
-                    </li>
-                    <li>
-                      <a className="dropdown-item" href="pricing.html">
-                        Pricing
-                      </a>
-                    </li>
-                  </ul>
+                <li className="nav-item ">
+                  <Link href="/about">
+                    <a className="nav-link">About</a>
+                  </Link>
                 </li>
                 <li className="nav-item">
-                  <a className="nav-link" href="service.html">
-                    Services
-                  </a>
-                </li>
-                <li className="nav-item">
-                  <a className="nav-link" href="project.html">
-                    Portfolio
-                  </a>
+                  <Link href="/services">
+                    <a className="nav-link">Services</a>
+                  </Link>
                 </li>
                 <li className="nav-item dropdown">
                   <a className="nav-link dropdown-toggle" href="#">
@@ -82,20 +70,12 @@ const Navbar = () => {
                     </li>
                   </ul>
                 </li>
-                <li className="nav-item">
-                  <a className="nav-link" href="contact.html">
-                    Contact
-                  </a>
-                </li>
               </ul>
 
               <form className="form-lg-inline my-2 my-md-0 ml-lg-4 text-center">
-                <a
-                  href="contact.html"
-                  className="btn btn-solid-border btn-round-full"
-                >
-                  Get a Quote
-                </a>
+                <Link href="/contact">
+                  <a className="btn btn-solid-border btn-round-full">Contact</a>
+                </Link>
               </form>
             </div>
           </div>

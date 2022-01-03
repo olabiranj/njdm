@@ -45,33 +45,35 @@ const Footer = () => {
                 </ul>
               </div>
             </div>
-            <div className="col-lg-3 col-md-6 col-sm-6">
+            <div className="col-lg-2 col-md-6 col-sm-6">
               <div className="widget">
-                <h4 className="text-capitalize mb-4">Subscribe Us</h4>
-                <p>Subscribe to get latest news article and resources </p>
+                <h4 className="text-capitalize mb-4">Socials</h4>
 
-                <form action="#" className="sub-form">
-                  <input
-                    type="text"
-                    className="form-control mb-3"
-                    placeholder="Subscribe Now ..."
-                  />
-                  <a href="#" className="btn btn-main btn-small">
-                    subscribe
-                  </a>
-                </form>
+                <ul className="list-unstyled footer-menu lh-35">
+                  <li>
+                    <a href="#">Facebook</a>
+                  </li>
+                  <li>
+                    <a href="#">Instagram</a>
+                  </li>
+                  <li>
+                    <a href="#">Twitter</a>
+                  </li>
+                  <li>
+                    <a href="#">LinkedIn</a>
+                  </li>
+                </ul>
               </div>
             </div>
-
             <div className="col-lg-3 ml-auto col-sm-6">
               <div className="widget">
                 <div className="logo mb-4">
                   <h3>
-                    Mega<span>kit.</span>
+                    Noble<span>Jet.</span>
                   </h3>
                 </div>
                 <h6>
-                  <a href="tel:+23-345-67890">Support@megakit.com</a>
+                  <a href="tel:+23-345-67890">support@noblejet.com</a>
                 </h6>
                 <a href="mailto:support@gmail.com">
                   <span className="text-color h4">+23-456-6588</span>
@@ -85,7 +87,7 @@ const Footer = () => {
               <div className="col-lg-6">
                 <div className="copyright">
                   &copy; Copyright Reserved to{" "}
-                  <span className="text-color">Megakit.</span> by{" "}
+                  <span className="text-color">NobleJet.</span> by{" "}
                   <a
                     href="https://themefisher.com/"
                     target="_blank"
@@ -95,7 +97,7 @@ const Footer = () => {
                   </a>
                 </div>
               </div>
-              <div className="col-lg-6 text-left text-lg-right">
+              <div className="col-lg-6 text-left text-lg-right d-none">
                 <ul className="list-inline footer-socials">
                   <li className="list-inline-item">
                     <a href="https://www.facebook.com/themefisher">
