@@ -47,28 +47,15 @@ const Navbar = () => {
                     <a className="nav-link">Services</a>
                   </Link>
                 </li>
-                <li className="nav-item dropdown">
-                  <a className="nav-link dropdown-toggle" href="#">
+                <li className="nav-item">
+                  <a
+                    className="nav-link"
+                    href="https://noblejetblog.wordpress.com"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
                     Blog
                   </a>
-                  <ul className="dropdown-menu" aria-labelledby="dropdown05">
-                    <li>
-                      <a className="dropdown-item" href="blog-grid.html">
-                        Blog Grid
-                      </a>
-                    </li>
-                    <li>
-                      <a className="dropdown-item" href="blog-sidebar.html">
-                        Blog with Sidebar
-                      </a>
-                    </li>
-
-                    <li>
-                      <a className="dropdown-item" href="blog-single.html">
-                        Blog Single
-                      </a>
-                    </li>
-                  </ul>
                 </li>
               </ul>
 
