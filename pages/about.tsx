@@ -23,7 +23,7 @@ const About: NextPage = () => {
         <meta name="theme-color" content="#DA70D6" />
         <meta name="twitter:card" content="summary" />
         <meta name="twitter:creator" content="@olabiranjoshua" />
-        <meta property="og:title" content="Joshua Olabiran" />
+        <meta property="og:title" content="Noble Jet" />
         <meta property="og:description" content="Noble jet Dvp and Mgt Ltd" />
         <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
         <meta
