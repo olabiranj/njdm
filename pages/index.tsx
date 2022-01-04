@@ -7,7 +7,6 @@ import Link from "next/link";
 import Footer from "../components/Footer";
 import Navbar from "../components/Navbar";
 import Service from "../components/Service";
-
 const Home: NextPage = () => {
   return (
     <>
@@ -18,7 +17,22 @@ const Home: NextPage = () => {
         />
         <meta name="description" content="NOBLE JET DVP AND MGT LTD" />
 
-        <meta name="author" content="themefisher.com" />
+        <meta name="author" content="Noble jet Dvp and Mgt Ltd" />
+        <link rel="shortcut icon" href="/favicon.ico" />
+        <meta name="theme-color" content="#DA70D6" />
+        <meta name="twitter:card" content="summary" />
+        <meta name="twitter:creator" content="@olabiranjoshua" />
+        <meta property="og:title" content="Joshua Olabiran" />
+        <meta property="og:description" content="Noble jet Dvp and Mgt Ltd" />
+        <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
+        <meta
+          property="og:image"
+          content="https://njdm.vercel.app/images/bg/home-1.jpg"
+        />
+        <meta
+          name="twitter:image"
+          content="https://njdm.vercel.app/images/bg/home-1.jpg"
+        />
 
         <title>NobleJet - Home</title>
       </Head>
