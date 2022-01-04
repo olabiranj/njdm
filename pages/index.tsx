@@ -1,4 +1,5 @@
 /* eslint-disable react/no-unescaped-entities */
+import { Carousel } from "antd";
 import type { NextPage } from "next";
 import Head from "next/head";
 import Image from "next/image";
@@ -33,13 +34,33 @@ const Home: NextPage = () => {
                 <div className="col-lg-9 col-md-10">
                   <div className="block">
                     <span className="d-block mb-3 text-white text-capitalize">
-                      Prepare For New Future
+                      NOBLE JET DVP AND MGT LIMITED
                     </span>
-                    <h1 className="animated fadeInUp mb-5">
-                      NOBLE JET <br />
-                      DVP AND <br />
-                      MGT LIMITED
-                    </h1>
+                    <Carousel autoplay>
+                      <h1 className="animated fadeInUp mb-5">
+                        Business <br /> Consultant
+                      </h1>
+                      <h1 className="animated fadeInUp mb-5">
+                        Life <br />
+                        Coaching
+                      </h1>
+                      <h1 className="animated fadeInUp mb-5">
+                        Content <br />
+                        Creation
+                      </h1>
+                      <h1 className="animated fadeInUp mb-5">
+                        Career <br />
+                        Expert
+                      </h1>
+                      <h1 className="animated fadeInUp mb-5">
+                        Career <br />
+                        Expert
+                      </h1>
+                      <h1 className="animated fadeInUp mb-5">
+                        Branding <br />
+                        Expert
+                      </h1>
+                    </Carousel>
                     <Link href="/about">
                       <a className="btn btn-main animated fadeInUp btn-round-full">
                         Get started
@@ -398,7 +419,6 @@ const Home: NextPage = () => {
                           Marketing Strategy to bring more affect
                         </a>
                       </h3>
-
                       <a
                         href="blog-single.html"
                         className="btn btn-small btn-solid-border btn-round-full text-white"
