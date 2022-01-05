@@ -16,7 +16,7 @@ const Services: NextPage = () => {
         />
         <meta name="description" content="NOBLE JET DVP AND MGT LTD" />
 
-        <meta name="author" content="Noble jet Dvp and Mgt Ltd" />
+        <meta name="author" content="Noble Jet Dvp and Mgt Ltd" />
         <link rel="shortcut icon" href="/favicon.ico" />
         <meta name="theme-color" content="#DA70D6" />
         <meta name="twitter:card" content="summary" />

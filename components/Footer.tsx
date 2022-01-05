@@ -82,7 +82,7 @@ const Footer = () => {
             </div>
           </div>
 
-          <div className="footer-btm pt-4">
+          <div className="footer-btm pt-4 d-none">
             <div className="row">
               <div className="col-lg-6">
                 <div className="copyright">
